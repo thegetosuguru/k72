@@ -15,7 +15,7 @@
 }
 
 body {
-  color: white;
-  background-color: black;
+  color: rgb(235, 235, 235);
+  background-color: rgb(20, 20, 20);
   font-family: 'lau3', sans-serif;
 }
