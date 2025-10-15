@@ -15,7 +15,8 @@
 }
 
 body {
-  color: rgb(235, 235, 235);
-  background-color: rgb(20, 20, 20);
+  color: rgb(30, 30, 30);
+  background-color: rgb(235, 235, 235);
   font-family: 'lau3', sans-serif;
+  overflow-x: hidden;
 }
