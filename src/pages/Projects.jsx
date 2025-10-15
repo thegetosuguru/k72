@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import K72 from "../Components/common/K72";
+
 
 const Projects = () => {
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center bg-neutral-900 text-white overflow-hidden select-none">
+      <div className='absolute top-0 left-0 pl-2'>
+        <K72></K72>
+      </div>
       <h1 className="text-[10vw] uppercase tracking-tight text-center leading-none text-gray-100">
         Nos <span className="text-gray-400">projets</span>
       </h1>
-
       <p className="mt-6 text-2xl text-gray-400">
         Cette page sera prête très bientôt.
       </p>

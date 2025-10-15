@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useRef } from 'react'
+import K72 from "../Components/common/K72";
 
 const Agence = () => {
 
@@ -59,6 +60,9 @@ const Agence = () => {
 
   return (
     <div className='parent'>
+      <div className='absolute top-5 left-0 pl-2'>
+        <K72></K72>
+      </div>
       <div id='page1' className='py-1 '>
         <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:rounded-3xl rounded-xl lg:w-[15vw] w-[25vw] lg:top-96 -top-80 lg:left-[30vw] left-[30vw]'>
           <img ref={imageRef} className='h-full object-cover w-full' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" alt="" />

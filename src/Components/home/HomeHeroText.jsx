@@ -4,7 +4,6 @@ import Video from "./Video";
 const HomeHeroText = () => {
   return (
     <div className="text-white font-[lau3] pt-8 text-center relative">
-
       <div className="text-[9vw] uppercase leading-[8vw]">
         L'étincelle
       </div>
