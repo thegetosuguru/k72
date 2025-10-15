@@ -13,7 +13,11 @@ A visually engaging fitness website built using React.js, React Router, Tailwind
 
 ## 🌐 Live
 
+- Netlify
 [Click here to see live website](https://thek72.netlify.app/)
+
+- Vercel
+[Click here to see live website](https://thek72.vercel.app/)
 
 ## 🖼️ Preview
 
