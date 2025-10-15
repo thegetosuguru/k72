@@ -5,7 +5,7 @@ A visually engaging fitness website built using React.js, React Router, Tailwind
 ## 🚀 Technologies Used
 
 - React.js
-- React Router 
+- React Router
 - TailwindCSS
 - GSAP
 
@@ -13,7 +13,7 @@ A visually engaging fitness website built using React.js, React Router, Tailwind
 
 ## 🌐 Live
 
-[Click here to see live website]()
+[Click here to see live website](https://thek72.netlify.app/)
 
 ## 🖼️ Preview
 

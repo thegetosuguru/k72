@@ -15,42 +15,43 @@ const Stair = (props) => {
 
     if (isFirstLoad.current) {
       isFirstLoad.current = false
+
+      gsap.set(pageRef.current, { opacity: 1, scale: 1 })
+      gsap.set(parent, { display: "none" })
       return
     }
 
-    tl.set(parent, { 
-      display: 'block',
+    tl.set(parent, { display: "block" })
 
-     })
-    tl.fromTo('.stair',
+    tl.fromTo(
+      ".stair",
       { height: 0, y: 0 },
       {
         height: "100%",
         duration: 0.25,
         stagger: { amount: 0.4, from: "end" },
-        ease: "power3.out"
+        ease: "power3.out",
       }
     )
 
     tl.to({}, { duration: 0.2 })
-    tl.to('.stair', {
+
+    tl.to(".stair", {
       y: "100%",
       duration: 0.25,
       stagger: { amount: 0.4, from: "start" },
-      ease: "power3.inOut"
+      ease: "power3.inOut",
     })
 
-    tl.set(parent, { display: 'none' })
+    tl.set(parent, { display: "none" })
 
     gsap.from(pageRef.current, {
       opacity: 0,
       delay: 1.3,
       scale: 1.2,
     })
-
   }, [currentPath])
 
-  console.log(props.children)
   return (
     <div>
       <div
@@ -58,13 +59,14 @@ const Stair = (props) => {
         className="h-screen w-full fixed z-50 top-0 left-0 pointer-events-none"
       >
         <div className="h-full flex w-full">
-          <div className="stair h-full w-1/5 bg-[#000000]" />
           <div className="stair h-full w-1/5 bg-[#000]" />
-          <div className="stair h-full w-1/5 bg-[#000000]" />
           <div className="stair h-full w-1/5 bg-[#000]" />
-          <div className="stair h-full w-1/5 bg-[#000000]" />
+          <div className="stair h-full w-1/5 bg-[#000]" />
+          <div className="stair h-full w-1/5 bg-[#000]" />
+          <div className="stair h-full w-1/5 bg-[#000]" />
         </div>
       </div>
+
       <div ref={pageRef}>
         {props.children}
       </div>

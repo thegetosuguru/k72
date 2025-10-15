@@ -7,7 +7,7 @@ import HomeBottomText from '../Components/home/HomeBottomText'
 const Home = () => {
   return (
     <div >
-      <div className='h-screen w-screen fixed'>
+      <div className='h-screen w-screen fixed z-0'>
         <Video></Video>
       </div>
       <div className='h-screen w-screen relative flex flex-col  md:justify-around lg:justify-between justify-end'>
